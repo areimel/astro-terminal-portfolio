@@ -1,0 +1,71 @@
+---
+publishDate: 2024-01-20T00:00:00Z
+title: Sample Project Two
+excerpt: A full-stack application built with Node.js and modern database technologies.
+image: /images/projects/sample-project-2.jpg
+tags:
+  - nodejs
+  - database
+  - api
+  - fullstack
+projectUrl: https://github.com/yourusername/sample-project-2
+repoUrl: https://github.com/yourusername/sample-project-2
+technologies:
+  - "Node.js: Server-side JavaScript runtime"
+  - "Express: Web application framework"
+  - "MongoDB: NoSQL database"
+  - "JWT: Authentication and authorization"
+---
+
+import TextAndImage from '~/components/ProjectComponents/TextAndImage.astro';
+import ProjectStats from '~/components/ProjectComponents/ProjectStats.astro';
+
+<TextAndImage
+  title="Full-Stack Development"
+  text="Sample Project Two showcases full-stack development capabilities with a Node.js backend, MongoDB database, and RESTful API design. This project demonstrates end-to-end application development skills."
+  imageUrl="/images/projects/sample-project-2-screenshot.jpg"
+  imageAlt="Sample Project 2 Screenshot"
+/>
+
+## Backend Features
+
+- **RESTful API**: Well-structured API endpoints following REST principles
+- **Database Integration**: MongoDB with Mongoose ODM
+- **Authentication**: JWT-based user authentication and authorization
+- **Error Handling**: Comprehensive error handling and validation
+- **Security**: Input sanitization and security best practices
+
+## API Endpoints
+
+### User Management
+- `POST /api/users/register` - User registration
+- `POST /api/users/login` - User authentication
+- `GET /api/users/profile` - Get user profile
+- `PUT /api/users/profile` - Update user profile
+
+### Data Operations
+- `GET /api/data` - Retrieve data with pagination
+- `POST /api/data` - Create new data entry
+- `PUT /api/data/:id` - Update existing data
+- `DELETE /api/data/:id` - Delete data entry
+
+## Database Schema
+
+The project uses MongoDB with well-defined schemas:
+- **Users**: User accounts with authentication data
+- **Data**: Main application data with relationships
+- **Sessions**: User session management
+
+## Deployment & DevOps
+
+- **Environment Configuration**: Separate configs for dev/staging/production
+- **Database Migration**: Scripts for schema updates
+- **Monitoring**: Basic logging and error tracking
+- **Documentation**: API documentation with examples
+
+<ProjectStats 
+  completionDate="January 2024"
+  teamSize="1 Developer"
+  duration="3 weeks"
+  technologies={["Node.js", "Express", "MongoDB", "JWT"]}
+/>

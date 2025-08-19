@@ -1,0 +1,76 @@
+---
+publishDate: 2024-03-10T00:00:00Z
+title: Sample Project Three
+excerpt: A mobile-first progressive web application with advanced features and offline capability.
+image: /images/projects/sample-project-3.jpg
+tags:
+  - pwa
+  - mobile-first
+  - offline
+  - service-worker
+projectUrl: https://github.com/yourusername/sample-project-3
+repoUrl: https://github.com/yourusername/sample-project-3
+technologies:
+  - "Progressive Web App: Offline-first mobile experience"
+  - "Service Workers: Background sync and caching"
+  - "IndexedDB: Client-side data storage"
+  - "Web Push: Real-time notifications"
+---
+
+import TextAndImage from '~/components/ProjectComponents/TextAndImage.astro';
+import ProjectStats from '~/components/ProjectComponents/ProjectStats.astro';
+
+<TextAndImage
+  title="Progressive Web Application"
+  text="Sample Project Three is a modern Progressive Web App that provides a native app-like experience in the browser. It features offline functionality, push notifications, and mobile-first design principles."
+  imageUrl="/images/projects/sample-project-3-screenshot.jpg"
+  imageAlt="Sample Project 3 Screenshot"
+/>
+
+## PWA Features
+
+- **App-like Experience**: Native app feel with smooth animations
+- **Offline Functionality**: Works without internet connection
+- **Push Notifications**: Real-time updates and engagement
+- **Installable**: Can be installed on device home screen
+- **Responsive**: Optimized for all screen sizes
+
+## Technical Implementation
+
+### Service Worker
+- **Caching Strategy**: Intelligent caching for optimal performance
+- **Background Sync**: Queue actions when offline
+- **Update Management**: Seamless app updates
+
+### Offline Storage
+- **IndexedDB**: Client-side database for complex data
+- **Local Storage**: Simple key-value storage
+- **Cache API**: Resource caching for offline access
+
+### Performance Optimizations
+- **Code Splitting**: Lazy loading for faster initial load
+- **Image Optimization**: WebP format with fallbacks
+- **Minification**: Compressed assets for faster delivery
+- **Prefetching**: Intelligent resource prefetching
+
+## Mobile-First Approach
+
+The application was designed with mobile users as the primary focus:
+- **Touch-Friendly Interface**: Large touch targets and gestures
+- **Fast Loading**: Optimized for slower mobile connections
+- **Battery Efficiency**: Minimal background processing
+- **Accessibility**: Screen reader and keyboard navigation support
+
+## Development Workflow
+
+- **Testing**: Cross-browser and device testing
+- **Build Process**: Automated build pipeline
+- **Deployment**: Continuous deployment with staging
+- **Monitoring**: Performance and error tracking
+
+<ProjectStats 
+  completionDate="March 2024"
+  teamSize="1 Developer"
+  duration="4 weeks"
+  technologies={["PWA", "Service Workers", "IndexedDB", "Web Push"]}
+/>

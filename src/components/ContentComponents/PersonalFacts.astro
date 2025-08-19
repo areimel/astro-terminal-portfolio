@@ -1,0 +1,130 @@
+---
+import DecoderText from "@components/AnimationComponents/DecoderText.astro";
+
+const facts = [
+    {
+        prefix: "//01_",
+        title: "Background",
+        content: `Full-stack developer with a passion for creating innovative web experiences.
+        <br/><br/>
+        Experienced in working with diverse clients and projects, from startups to enterprise applications.
+        <br/><br/>
+        Always exploring new technologies and staying current with industry trends to deliver cutting-edge solutions.
+        `
+    },
+    {
+        prefix: "//02_",
+        title: "Interests",
+        content: `
+        <ul class="mt-4 space-y-4 pl-6">
+          <li><strong>Technology</strong>: Passionate about emerging web technologies, frameworks, and development tools that push the boundaries of what's possible.</li>
+          <li><strong>Design</strong>: Interested in the intersection of technology and design, creating beautiful and functional user interfaces.</li>
+          <li><strong>Open Source</strong>: Active contributor to open source projects and believer in collaborative development.</li>
+        </ul>`
+    },
+    {
+        prefix: "//03_",
+        title: "Philosophy",
+        content: `
+        <ul class="mt-4 space-y-4 pl-6">
+          <li><strong>User-Centered Design</strong>: Every project should prioritize the user experience and solve real problems.</li>
+          <li><strong>Clean Code</strong>: Write maintainable, well-documented code that others can easily understand and build upon.</li>
+          <li><strong>Continuous Learning</strong>: Technology evolves rapidly - staying curious and adaptable is essential for growth.</li>
+        </ul>`
+    },
+    {
+        prefix: "//04_",
+        title: "Mission",
+        content: `
+        Creating digital experiences that are both functional and engaging. Technology should enhance human capabilities and make complex tasks simple and intuitive.
+        <br/><br/>
+        Committed to building accessible, performant, and scalable web applications that make a positive impact on users' lives.
+        `
+    }
+];
+---
+
+<section class="w-full p-4 md:p-8 mb-12 bg-terminal-bg-primary">
+  <div class="w-full h-full max-w-screen-2xl mx-auto">
+    
+    <div class="text-center mb-12">
+      <h2 class="text-5xl font-semibold text-terminal-500 font-uav-mono mt-2">
+        About Me
+      </h2>
+    </div>
+
+    <div class="facts-grid">
+      {facts.map(({ prefix, title, content }) => (
+        <>
+          <div class="facts-cell facts-header">
+            <p class="facts-prefix">{prefix}</p>
+            <h3 class="facts-title">{title}</h3>
+          </div>
+          <div class="facts-cell facts-content">
+            <div class="facts-text" set:html={content} />
+          </div>
+        </>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .facts-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 15px;
+    width: 100%;
+    min-height: 600px;
+  }
+
+  .facts-cell {
+    @apply bg-terminal-bg-secondary p-6 shadow-md flex flex-col justify-start border border-terminal-300;
+  }
+
+  .facts-header {
+    grid-column: span 2 / span 2;
+  }
+
+  .facts-content {
+    grid-column: span 4 / span 4;
+  }
+
+  .facts-prefix {
+    @apply text-5xl font-semibold text-terminal-500 font-uav-mono mb-4;
+  }
+
+  .facts-title {
+    @apply text-5xl font-semibold text-terminal-500 font-uav-mono;
+  }
+
+  .facts-text {
+    @apply text-terminal-400 font-kode text-xl;
+    
+    ::marker{
+      content: "> ";
+      @apply text-terminal-700;
+    }
+  }
+
+
+  ul{
+    @apply text-lg text-terminal-400 font-kode pl-4;
+    
+  }
+
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .facts-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 15px;
+    }
+
+    .facts-header,
+    .facts-content {
+      grid-column: 1;
+    }
+  }
+</style> 

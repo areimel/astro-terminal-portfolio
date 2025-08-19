@@ -1,0 +1,66 @@
+---
+publishDate: 2024-02-01T00:00:00Z
+title: Sample Project One
+excerpt: A showcase project demonstrating modern web development techniques with React and TypeScript.
+image: /images/projects/sample-project-1.jpg
+tags:
+  - react
+  - typescript
+  - web-development
+  - frontend
+projectUrl: https://github.com/yourusername/sample-project-1
+repoUrl: https://github.com/yourusername/sample-project-1
+technologies:
+  - "React: Frontend framework for building user interfaces"
+  - "TypeScript: Type-safe JavaScript development"
+  - "Tailwind CSS: Utility-first CSS framework"
+  - "Vite: Fast build tool and development server"
+---
+
+import TextAndImage from '~/components/ProjectComponents/TextAndImage.astro';
+import ProjectStats from '~/components/ProjectComponents/ProjectStats.astro';
+
+<TextAndImage
+  title="Project Overview"
+  text="This sample project demonstrates a modern React application built with TypeScript and Tailwind CSS. It showcases best practices in component architecture, state management, and user interface design."
+  imageUrl="/images/projects/sample-project-1-screenshot.jpg"
+  imageAlt="Sample Project 1 Screenshot"
+/>
+
+## Features
+
+- **Modern Tech Stack**: Built with React 18, TypeScript, and Vite
+- **Responsive Design**: Works seamlessly across all device sizes
+- **Component Library**: Reusable UI components with consistent styling
+- **Type Safety**: Full TypeScript integration for better development experience
+- **Fast Development**: Hot module replacement and optimized build process
+
+## Technical Implementation
+
+### Architecture
+The project follows a component-based architecture with clear separation of concerns:
+- **Components**: Reusable UI components in `/src/components`
+- **Pages**: Application routes and page-level components
+- **Utils**: Helper functions and utilities
+- **Types**: TypeScript type definitions
+
+### Key Technologies
+- **React**: For building the user interface
+- **TypeScript**: Adding type safety to JavaScript
+- **Tailwind CSS**: For rapid UI development
+- **Vite**: As the build tool and dev server
+
+## Lessons Learned
+
+This project provided valuable insights into modern frontend development practices:
+1. The importance of type safety in larger applications
+2. Benefits of utility-first CSS frameworks
+3. Component composition patterns in React
+4. Modern build tools and their impact on developer experience
+
+<ProjectStats 
+  completionDate="February 2024"
+  teamSize="1 Developer"
+  duration="2 weeks"
+  technologies={["React", "TypeScript", "Tailwind CSS", "Vite"]}
+/>
