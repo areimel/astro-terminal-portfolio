@@ -1,0 +1,41 @@
+UNSPLASH IMAGE ATTRIBUTIONS
+===========================
+
+Image Credits for Developer Portfolio Template
+All images are used under the Unsplash License (free for commercial use)
+
+BLOG IMAGES:
+- web-development.jpg - Photo by Christopher Gower on Unsplash
+  Source: https://unsplash.com/photos/m_HRfLhgABo
+
+PROJECT IMAGES:
+- sample-project-1.jpg - Photo by Florian Olivo on Unsplash
+  Source: https://unsplash.com/photos/4hbJ-eymZ1o
+
+- sample-project-1-screenshot.jpg - Photo by Roman Synkevych on Unsplash
+  Source: https://unsplash.com/photos/wX2L8L-fGeA
+
+- sample-project-2.jpg - Photo by Markus Spiske on Unsplash
+  Source: https://unsplash.com/photos/70Rir5vB96U
+
+- sample-project-2-screenshot.jpg - Photo by Christopher Gower on Unsplash
+  Source: https://unsplash.com/photos/m_HRfLhgABo
+
+- sample-project-3.jpg - Photo by Hal Gatewood on Unsplash
+  Source: https://unsplash.com/photos/tZc3vjPCk-Q
+
+- sample-project-3-screenshot.jpg - Photo by Edho Pratama on Unsplash
+  Source: https://unsplash.com/photos/T6fDN60bMWY
+
+LICENSING INFO:
+- License: Unsplash License
+- Usage Rights: Free for commercial use
+- Attribution: Not required but appreciated
+- Modifications: Allowed
+- Distribution: Allowed
+
+Downloaded on: August 19, 2025
+Total Images: 7
+Total Size: ~2.4MB
+
+These images are perfect for developer portfolios, showcasing professional web development, coding environments, and modern tech workspaces.
